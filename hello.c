@@ -4,10 +4,10 @@
 
 int init_module(void)
 {
-    printk(KERNEL_INFO "HELLO:: This is our LKM speaking! \n")
+    printk(KERN_INFO "HELLO:: This is our LKM speaking! \n")
     return 0;
 }
 void cleanup_module(void)
 {
-    printk(KERNEL_INFO "HELLO:: This is our LKM leaving :( \n")
+    printk(KERN_INFO "HELLO:: This is our LKM leaving :( \n")
 }
